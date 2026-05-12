@@ -76,7 +76,7 @@ To launch the tool from your Activities/Applications menu like a normal app:
 
 ### 1. Put the script somewhere stable
 
-Create bin directory to your home directory, copy the file in to it and make it excutinable.
+Create bin directory to your home directory, copy the file in to it and make it executable.
 
 ```bash
 mkdir -p ~/bin
@@ -140,9 +140,6 @@ Open **File → Settings…** and check that the Songs folder is set correctly. 
 
 **Some songs from an existing playlist don't show up after loading.**
 The tool matches playlist entries to the library by exact `Artist` + `Title` (case-insensitive). If a song's tags have been changed since the playlist was made, it won't match. The warning dialog lists the unmatched entries.
-
-**ImportError: No module named PySide6.**
-PySide6 isn't installed for the Python interpreter the script is running with. 
 
 **ImportError: No module named PySide6.**
 PySide6 isn't installed for the Python interpreter the script is running with. See the installation steps above; if using a venv, make sure the `.desktop` `Exec=` line points at the venv's Python.
